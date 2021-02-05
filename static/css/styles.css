@@ -1,0 +1,283 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+.bgimage{
+	background-image: url(../images/bg2.jpg);
+	background-size: 100% 110%;
+	width: 100%;
+	height: 200vh;
+}
+
+.menu{
+
+	width: 100%;
+	height: 150px;
+
+}
+
+.leftmenu{
+	width: 30%;
+	line-height: 100px;
+	float: left;
+}
+
+.leftmenu h4{
+	padding-left: 70px;
+	font-weight: bold;
+	color: white;
+	font-size: 42px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.rightmenu{
+	width:70%;
+	height: 100px;
+	float: right;
+}
+.rightmenu ul{
+	margin-left: 600px;
+}
+
+.rightmenu ul li {
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	list-style: none;
+	font-size: 15px;
+	color:white;
+	font-weight: bold;
+	line-height: 100px;
+	margin-left: 40px;
+	text-transform: uppercase;
+
+}
+
+.rightmenu ul li:hover ul li{
+	color: white;
+}
+
+
+.text{
+	width: 100%;
+	margin-top: 130px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+
+.text h4{
+
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.text h1{
+	font-size:82px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700px;
+	margin:14px 0px;
+}
+
+
+#buttonone{
+	background-color: transparent;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 40px;
+	width: 150px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 25px;
+	border: 3px solid white;
+	cursor: pointer;
+}
+
+#buttontwo{
+
+	background-color: transparent;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 40px;
+	border: 3px solid white;
+	width: 150px;
+	cursor: pointer;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(#bdacd1 ,#bdacd1 50% , #fff 50% , #fff 100%);
+	position: relative;
+}
+
+.container {
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin: 240px auto;
+    /*display: flex;
+	justify-content: space-between;
+	justify-content: flex-end;
+	flex-wrap: wrap;*/
+}
+.container .box{
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	background: #fff;
+	float: left;
+	margin: 15px;
+	overflow: hidden;
+	border-radius: 10px;
+	padding: 100px 40px 60px;
+	box-shadow: 0 15px 45px rgba(0,0,0,.1);
+}
+.container .box:before{
+	content: '';
+	position: absolute;
+	top: 0 ;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:#EBDEF0 ;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.5s;
+
+}
+
+
+.container .box:hover:before
+{
+	transform: scaleY(1);
+	transform-origin: bottom;
+	transition: transform 0.5s;
+
+}
+.box:hover
+{
+ cursor: pointer;
+}
+
+.container .box h2{
+	position: absolute;
+	left: 40px;
+	top: 60px;
+	font-size: 4em;
+	font-weight: 800;
+	z-index: 1;
+	opacity: 0.5;
+	transition: 0.5s;
+	cursor: hand;
+}
+
+.container .box:hover h2{
+	opacity: 1;
+	color: black;
+	transform: translateY(-40px);
+	cursor: hand;
+}
+
+.container .box h3{
+
+	position: relative;
+	font-size: 1.5em;
+	z-index: 2;
+	color: black;
+	transition: 0.5s;
+	cursor: hand;
+}
+
+.container .box p {
+
+	position: relative;
+	z-index: 2;
+	color: black;
+	transition: 0.5s;
+}
+
+.container .box:hover h3,
+.container .box:hover p {
+
+	 color: #008080;
+}
+.img
+{
+	transform: scaleY(1);
+	transform-origin: bottom;
+	transition: transform 0.5s;
+	position:absolute;
+	bottom:70%;
+	background: transparent;
+	
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	background: #2a2b2b2a ;
+	height: auto;
+	width: 100vw;
+	font-family: "Open Sans";
+	padding-top: 40px;
+	color: #fff;
+}
+
+.footer-content{
+
+	display: flex;
+	align-items: center;
+	justify-content : center;
+	flex-direction : column;
+	text-align : center;
+}
+
+.footer-content h3 {
+
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+
+.footer-content p {
+
+	max-width: 500px;
+	margin : 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.footer-bottom{
+
+	background: transparent;
+	width: 100vw;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.footer-bottom p{
+
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.footer-bottom span{
+
+	text-transform: uppercase;
+	font-weight: 200;
+}
+ul{
+	cursor: pointer;
+	
+}

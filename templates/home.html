@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+		 <link href="{% static 'http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic'%}" rel='stylesheet'>
+		  <link href="{% static 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans'%}" rel='stylesheet'>
+</head>
+<body>
+	<div class="bgimage">
+		<div class="menu">
+			
+			<div class="leftmenu">
+				<h4> GVPCEW</h4>
+			</div>
+
+			<div class="rightmenu">
+				<ul>
+					<a href = "{% url 'signup' %}">
+						<button id="buttonone"> Sign Up </button>
+					</a>
+					<a href ="{% url 'login' %}">
+						<button id="buttontwo"> Sign In </button>
+					</a>	
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="text">
+			<h1> Hi! This is GENA. </h1>
+			<h2> A free cerificate generator developed by GVPCEW.</h2>
+		</div>
+
+		<div class= "container">
+			<div class="box">
+				<div class ="img">
+					<img src="{% static 'images/cert-logo.jpg' %}" alt="Avatar" width=60 height=60 >
+					</div>
+		
+				<h3> Who am I ?</h3>
+				<p>I am a Certificate Generator, built especially to work along side GVPCEW and help students feel more accomplished by the end of the day.</p>
+			</div>	
+			<div class="box">
+				<div class ="img">
+					<img src="{% static 'images/institute.jpg' %}" alt="Avatar" width=60 height=60 >
+					</div>
+				<h3> Why was I born ?</h3>
+				<p>My purpose is to serve the community of institutions in order to make their work simple and better.</p>
+			</div>	
+			<div class="box">
+				<div class ="img">
+					<img src="{% static 'images/code-logo.jpg' %}" alt="Avatar" width=60 height=60 >
+					</div>
+				<h3> Who bought me to life ?</h3>
+				<p> Well , few wonderful students from college of GVPCEW put their blood and sweat to make me who I am today.</p>
+	        </div>
+        </div>
+	</div>
+
+	<footer>
+		<div class = "footer-content">
+			<h3><strong> GVPCEW</strong> </h3>
+			<p>Madhurawada , Vishakhapatnam </p>
+        </div>
+        <div class="footer-bottom">
+             <p> copyright &copy;2021 gvpcew. designed by <span> group-8.</span> </p>
+        </div>
+	</footer> 
+      
+</body>
+</html>

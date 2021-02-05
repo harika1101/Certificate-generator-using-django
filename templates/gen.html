@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Certificate</title>
+    <link rel="stylesheet" href="{% static 'css/styl.css' %}">
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/logo.jpg' %}" alt="GVPCEW">
+        <h3>Get your Certificate</h3>
+    </header>
+
+    <main>
+        <label for="name">Type The Name</label>
+        <input required placeholder="Enter Here" type="text" name="Name" id="name" autocomplete="name">
+        <label for="course">Type The Course</label>
+        <input required placeholder="Enter Here" type="text" name="Course" id="course" autocomplete="course">
+        <button id="submit">Get Certificate</button>
+    </main>
+
+    <script src="{% static 'https://unpkg.com/pdf-lib/dist/pdf-lib.min.js' %}"></script>
+    <script src="{% static 'https://unpkg.com/@pdf-lib/fontkit@0.0.4' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/FileSaver.js' %}"></script>
+</body>
+</html>
